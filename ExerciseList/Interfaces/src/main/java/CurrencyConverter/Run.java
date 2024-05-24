@@ -2,7 +2,7 @@ package CurrencyConverter;
 
 public class Run {
     public static void main(String[] args) {
-        CurrencyConverter currencyConverter = new CurrencyConverter();
+        FinancialConversion currencyConverter = new CurrencyConverter();
 
         double real = 43;
         double dollar = 25;

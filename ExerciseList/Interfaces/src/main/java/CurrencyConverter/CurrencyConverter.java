@@ -1,6 +1,6 @@
 package CurrencyConverter;
 
-public class CurrencyConverter implements FinancialConversion{
+public class CurrencyConverter implements FinancialConversion {
     private static final double DOLLAR_TO_REAL_RATE = 5.14;
 
     @Override
