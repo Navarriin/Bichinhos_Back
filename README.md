@@ -1,6 +1,6 @@
 # Exercícios de Back End
 
-## Lista 1
+## Lista 1 (Logica)
 
 1. **Logica e algoritmo puro**
    - **Descrição:**  Entender o desenvolvimento das habilidades de lógica e algoritmo utilizando Java.
@@ -10,7 +10,7 @@
       - `receivingListOfNumbersAndConvert()` - Método onde recebe a string do usuário com os números separados por ",", o salva em um array de strings e o converte para um array de numeros inteiros, retornando o mesmo.
       - `sortedListAndPrint(List<Integer> numbers)` - Método que recebe a lista que o método anterior retorna, a ordena de forma crescende(do menor para o maior) e printa os números do array separados por "," para o usuário. 
 
-## Lista 2
+## Lista 2 (Interfaces)
 
 1. **Classe ConversorMoeda:**
    - **Descrição:** Implementa a interface `ConversaoFinanceira`.

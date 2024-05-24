@@ -31,6 +31,7 @@ public class Exercise {
     private static void sortedListAndPrint(List<Integer> list) {
         Collections.sort(list);
 
+        // Pensei em converter o array para string e a printar, mas deixei assim por não saber qual seria melhor.
         System.out.println("Sua lista de números válidos ordenada de forma crescente: ");
         for (int i = 0; i < list.size(); i++) {
             if(i == list.size() - 1) {
