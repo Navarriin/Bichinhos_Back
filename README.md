@@ -12,62 +12,58 @@
 
 ## Lista 2 (Interfaces)
 
-1. **Classe ConversorMoeda:**
-   - **Descrição:** Implementa a interface `ConversaoFinanceira`.
+1. **Classe CurrencyConverter:**
+   - **Descrição:** Implementa a interface `FinancialConverter`.
    - **Métodos:**
-     - `converterDolarParaReal(double valorDolar)` - Converte um valor em dólar para real.
-   - **Detalhes:** O método deve receber o valor em dólar como parâmetro e utilizar a taxa de câmbio atual para realizar a conversão.
+     - `convertDollarToReal(double dollarValue)` - Converte um valor de dólar para real.
+     - `convertRealToDollar(double realValue)` - Converte um valor de real para dólar.
+   - **Detalhes:** O método deve receber o valor como parâmetro e utilizar a taxa de câmbio atual para realizar a conversão.
 
-2. **Classe CalculadoraSalaRetangular:**
-   - **Descrição:** Implementa a interface `CalculoGeometrico`.
+2. **Classe RectangularRoomCalculator:**
+   - **Descrição:** Implementa a interface `GeometricCalculation`.
    - **Métodos:**
-     - `calcularArea(double altura, double largura)` - Calcula a área de uma sala retangular.
-     - `calcularPerimetro(double altura, double largura)` - Calcula o perímetro de uma sala retangular.
+     - `calculateArea(double height, double width)` - Calcula a área de uma sala retangular.
+     - `calculatePerimeter(double height, double width)` - Calcula o perímetro de uma sala retangular.
 
-3. **Classe TabuadaMultiplicacao:**
-   - **Descrição:** Implementa a interface `Tabuada`.
+3. **Classe MultiplicationTable:**
+   - **Descrição:** Implementa a interface `MultiplicationTable`.
    - **Método:**
-     - `mostrarTabuada(int numero)` - Exibe a tabuada de um número.
+     - `showMultiplicationTable(int numero)` - Exibe a tabuada de um número.
    - **Detalhes:** O método deve mostrar a tabuada do número de 1 a 10.
 
 4. **Interface ConversorTemperatura:**
    - **Descrição:** Define métodos para conversão de temperatura.
    - **Métodos:**
-     - `celsiusParaFahrenheit(double celsius)` - Converte Celsius para Fahrenheit.
-     - `fahrenheitParaCelsius(double fahrenheit)` - Converte Fahrenheit para Celsius.
+     - `celsiusToFahrenheit(double celsius)` - Converte Celsius para Fahrenheit.
+     - `fahrenheitToCelsius(double fahrenheit)` - Converte Fahrenheit para Celsius.
 
-5. **Classe ConversorTemperaturaPadrao:**
-   - **Descrição:** Implementa a interface `ConversorTemperatura`.
-   - **Detalhes:** Fornece as implementações para os métodos de conversão de temperatura utilizando as fórmulas padrão.
+5. **Interface Calculable:**
+   - **Descrição:** Define o método `calculateFinalPrice()` para calcular o preço final de um produto ou serviço.
 
-6. **Interface Calculavel:**
-   - **Descrição:** Define o método `calcularPrecoFinal()` para calcular o preço final de um produto ou serviço.
-
-7. **Classe Livro (Implementa Calculavel):**
+6. **Classe Books (Implementa Calculable):**
    - **Descrição:** Representa um livro com atributos como preço base e desconto.
    - **Método:**
-     - `calcularPrecoFinal()` - Calcula o preço final do livro considerando o desconto.
+     - `calculateFinalPrice()` - Calcula o preço final do livro considerando o desconto.
 
-8. **Classe ProdutoFisico (Implementa Calculavel):**
+7. **Classe Product (Implementa Calculable):**
    - **Descrição:** Representa um produto físico com atributos como preço base, custo de envio e taxa de imposto.
    - **Método:**
-     - `calcularPrecoFinal()` - Calcula o preço final do produto físico considerando envio e imposto.
+     - `calculateFinalPrice()` - Calcula o preço final do produto físico considerando envio e imposto.
 
-9. **Interface Vendavel:**
+8. **Interface Salable:**
    - **Descrição:** Define métodos para produtos ou serviços vendáveis.
    - **Métodos:**
-     - `calcularPrecoTotal(int quantidade)` - Calcula o preço total de um produto ou serviço com base na quantidade.
-     - `aplicarDesconto(double desconto)` - Aplica um desconto no preço total.
-
-10. **Classe Produto (Implementa Vendavel):**
+     - `calculateTheFinalPrice(int quantity)` - Calcula o preço total de um produto ou serviço com base na quantidade.
+     - `applyDiscount(double discount)` - Aplica um desconto no preço total.
+9. **Classe Produto (Implementa Vendavel):**
     - **Descrição:** Representa um produto com atributos como preço unitário e quantidade em estoque.
     - **Métodos:**
-      - `calcularPrecoTotal(int quantidade)` - Verifica se a quantidade está disponível em estoque e retorna o preço total.
-      - `aplicarDesconto(double desconto)` - Aplica o desconto no preço unitário.
+      - `calculateTheFinalPrice(int quantity)` - Verifica se a quantidade está disponível em estoque e retorna o preço total.
+      - `applyDiscount(double discount)` - Aplica o desconto no preço unitário.
 
-11. **Classe Servico (Implementa Vendavel):**
+10. **Classe Servico (Implementa Vendavel):**
     - **Descrição:** Representa um serviço com atributos como preço por hora e horas de trabalho.
     - **Métodos:**
-      - `calcularPrecoTotal(int quantidade)` - Calcula o preço total com base nas horas de trabalho.
-      - `aplicarDesconto(double desconto)` - Aplica o desconto no preço por hora.
+      - `calculateTheFinalPrice(int quantity)` - Calcula o preço total com base nas horas de trabalho.
+      - `applyDiscount(double discount)` - Aplica o desconto no preço por hora.
 
