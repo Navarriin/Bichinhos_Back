@@ -55,13 +55,13 @@
    - **Métodos:**
      - `calculateTheFinalPrice(int quantity)` - Calcula o preço total de um produto ou serviço com base na quantidade.
      - `applyDiscount(double discount)` - Aplica um desconto no preço total.
-9. **Classe Produto (Implementa Vendavel):**
+9. **Classe Product (Implementa Salable):**
     - **Descrição:** Representa um produto com atributos como preço unitário e quantidade em estoque.
     - **Métodos:**
       - `calculateTheFinalPrice(int quantity)` - Verifica se a quantidade está disponível em estoque e retorna o preço total.
       - `applyDiscount(double discount)` - Aplica o desconto no preço unitário.
 
-10. **Classe Servico (Implementa Vendavel):**
+10. **Classe Service (Implementa Salable):**
     - **Descrição:** Representa um serviço com atributos como preço por hora e horas de trabalho.
     - **Métodos:**
       - `calculateTheFinalPrice(int quantity)` - Calcula o preço total com base nas horas de trabalho.
